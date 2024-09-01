@@ -1,0 +1,52 @@
+/*ESTILOS GENERALES */
+
+body {
+    /*
+    background-color: #b4b4b4;
+    background-image: url(x.png);
+    background-repeat: repeat;
+    background-position: -10px 100px;
+    background-attachment: scroll;
+    */
+
+    background: url(x.png) repeat center center fixed #b4b4b4;
+
+    color: #a6cfe2;
+    text-transform: none;
+    text-decoration: underline;
+    /*
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: normal;
+    font-variant: small-caps;
+    line-height: 35px;
+    */
+
+    font: italic bold small-caps 20px/35px arial, helvetica, sans-serif;
+    /*
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    */
+    margin: 0;
+}  
+div {
+    
+    width: 560px;
+    /* height: 600px;*/
+    background: black;
+
+    margin: 20px auto;
+    padding: 20px;
+    /*
+    border-width: 5px;
+    border-color: red;
+    border-style: double;
+    */
+    /*border: double 5px red;*/
+
+    border-top: double 5px red;
+    border-bottom: solid 8px tomato;
+}

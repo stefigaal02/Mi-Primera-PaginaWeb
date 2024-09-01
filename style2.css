@@ -1,0 +1,90 @@
+body {
+    background: #f4f4f4;
+    margin: 0;
+}
+.container {
+    width: 70%;
+    margin: 2em auto;
+    background: white;
+    padding: 1em;
+
+    position: relative;
+}
+/*¨selectores jeraquicos*/
+/*.container a {
+    color: red;
+}
+.container > a {
+    color: green;
+}
+.container + a {
+    color: tomato;
+}
+.container ~ a {
+    color: rgb(24, 21, 23);
+}*/
+/*pseudoselectores*/
+a {
+    text-decoration: none;
+}
+    a:visited {
+        color: red;
+    }
+    a:active {
+        color: yellow;
+    }
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+    a[href="#"]::before {
+        content: "[NO LINK] ";
+    }
+
+    a[href^="http"]::before {
+        content: "[WEB] ";
+    }
+
+    a[href$="pdf"]::before {
+        content: "[PDF] ";
+    }
+
+    a[href*="google"]::before {
+    content: "[GOOGLE] ";
+    }
+
+    a[href^="http://franciscoamk.com"]::before {
+        content: "[franciscoAMK] ";
+    }
+    a::before {
+        color: red;
+    }
+    a::after {
+        content: "*";
+        color: red;
+    }
+ul {
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+}
+    ul li {
+        border-bottom: 0.0625rem solid grey;
+    }
+    ul li: :first-child {
+        border-top: 0.0625rem solid grey;
+    }
+    ul li:nth-child(2n+1) {
+        background: #e1e1e1;  /* para aplicar el estilo por cuadro*/
+    }
+    ul li:nth-child(2n+2) {
+    background: #f3f3f3;  /* para aplicar el estilo por cuadrado o sombreado*/
+    }
+
+    ul li a {
+        display: block;
+        padding: 0.5em;
+    }
+
+   
+    
